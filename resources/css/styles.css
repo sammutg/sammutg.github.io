@@ -1,0 +1,416 @@
+/* @override 
+	http://www.pkoi-faire-simple.fr/resources/css/styles.css
+	http://pkoi-faire-simple.fr/resources/css/styles.css
+*/
+
+/* @group GENERAL SETTINGS */
+
+/*=== General settings - v1.0 ===*/
+
+body {
+	background: url(images/bg.gif) repeat-x fixed;
+	font-family: "Myriad Pro", "Trebuchet Ms", sans-serif;
+	line-height: 22px;
+	color: black;
+}
+
+p {
+	margin-bottom: 15px;
+}
+
+p, ul li {
+	font-size: 13px;
+	font-family: "Lucida Grande", "Lucida Sans", sans-serif;
+}
+
+em {
+	font-style: normal;
+}
+
+/* links settings */
+
+a {
+	color: #34beee;
+	text-decoration: none
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/*////////// //////// //////// ////// //////*/
+/* z- index so the header stay always on top*/
+
+#wrapHeader {
+	z-index: 100;
+	height: 233px !important;
+}
+
+#wrapContent {
+	z-index: 5;
+}
+
+/* @end */
+
+/* @group HEADER */
+
+/*==== HEADER STYLING =====*/
+/* the left:50% and margin-left:-480px helps the header to stay centered all the time*/
+
+div#header {
+	position: fixed;
+	z-index: 100;
+	background: url(images/bg.gif) repeat-x fixed;
+	overflow: hidden;
+	left: 50%;
+	margin-left: -480px;
+}
+
+/* topBar fonts styling */
+
+div#topBar div#years ul li, 
+div#topBar div#years ul li a,
+div#topBar div#topBarRight h2 {
+	line-height: 52px;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+div#topBar div#years ul li,
+div#topBar div#years ul li a {
+	font-size: 26px;
+}
+
+/* Years Nav - Also check ie.css to see the diferent settings for ie7*/
+
+div#topBar div#years ul li {
+	border-left: 1px solid #3d3d3d;
+	color: #4d4d4d;
+	width: 108px;
+	height: 52px;
+	display: table-cell;
+	text-align: center;
+}
+
+div#topBar div#years ul li.lastYear {
+	border-right: 1px solid #3d3d3d;
+}
+
+div#topBar div#years ul li a {
+	color: #FFFFFF;
+}
+
+div#topBar div#years ul li a.active {
+	color: #34beee;
+}
+
+/* Right part of the topBar*/
+
+div#topBar div#topBarRight h2 {
+	font-size: 26px;
+	color: white;
+	letter-spacing: -1px;
+	margin-left: 40px;
+}
+
+div#topBar div#topBarRight h2 em,
+div#topBar div#topBarRight a {
+	color: #f54cab;
+	font-style: normal;
+}
+
+/* Email, Phone and Name part settings */
+
+div#information div#info {
+	text-align: right;
+	height: 181px;
+	border-right: 1px solid #dadada;
+	margin-left: 4px;
+}
+
+div#information div#info h2 {
+	font-size: 46px;
+	line-height: 50px;
+	margin: 40px;
+	color: #555555;
+	/*text-shadow: 0 1px 1px rgba(0,0,0,.5);	*/
+}
+
+div#information div#info h2 em {
+	color: #acacac;
+}
+
+div#information div#name h1 {
+	font-size: 68px;
+	line-height: 56px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 40px 0 0 40px;
+	/*text-shadow: 0 1px 1px rgba(0,0,0,.5);	*/
+}
+
+div#information div#name h1 a {
+	text-decoration: none;
+	color: #555555;
+}
+
+div#information div#name h1 a em {
+	color: #acacac;
+}
+
+/* @end */
+
+/* @group CONTENT */
+
+/*======  CONTENT  =====*/
+/* clearing the header since this wrap would go below the header*/
+
+#wrapContent {
+	clear: both;
+}
+
+/* div content holds the jobs and projects */
+
+div#content {
+	border-right: 1px solid #dadada;
+	margin-left: 4px;
+	margin-bottom: 50px;
+	padding-top: 15px;
+	padding-bottom: 40px
+}
+
+/* styling for each entry on the resume*/
+
+div.resumeEntry {
+	padding-top: 25px;
+	clear: both;
+}
+
+div.resumeEntry div.when {
+	text-align: right;
+	margin-left: -5px;
+	margin-right: 15px;
+}
+
+div.resumeEntry div.grid_3 p {
+	color: #f54cab;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 100;
+	
+}
+
+div.resumeEntry div em {
+	color: #bbbbbb;
+	font-size: 13px;
+	letter-spacing: -1px;
+	line-height: 12px !important;
+}
+
+div.resumeEntry div h3 {
+	color: #555555;
+	font-size: 24px;
+	font-style: italic;
+	margin-bottom: 2px;
+	/*text-shadow: 0px 0px 2px rgba(0,0,0,.3);*/
+}
+
+div.resumeEntry div h5 {
+	color: #34beee;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+div.description > * {
+	margin-left: 8px;
+}
+
+div.description p span {
+	font-weight: bold;
+}
+
+div.description p.ref {
+	font-size: 11px;
+	color: gray;
+}
+
+div.description p.ref a {
+	color: gray;
+}
+
+div.description p.ref a:hover {
+	color: #34beee;
+}
+
+div.description p.ref a:visited {
+	font-style: italic;
+}
+
+/* @end */
+
+/* @group SIDEBAR */
+/*=====  SIDEBAR ======*/
+/* sidebar Nav settings - ie.css sets some changes to correct minor issue */
+
+div#sidebar ul#sidebarNav {
+	border-top: 1px solid #dadada;
+	position: fixed;
+	width: 1000px;
+	z-index: 100;
+	overflow: hidden;
+	background-color: white;
+}
+
+div#sidebar ul#sidebarNav {
+	border-bottom: 1px solid #dadada;
+	height: 40px;
+	margin-left: -10px;
+	padding-left: 50px;
+}
+
+div#sidebar ul#sidebarNav li {
+	display: inline;
+	margin: 0 10px;
+	list-style: disc outside;
+}
+
+div#sidebar ul#sidebarNav li a {
+	color: #acacac;
+	line-height: 44px;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	text-decoration: none;
+}
+
+div#sidebar ul#sidebarNav li a:hover {
+	color: #555555;
+}
+
+div#sidebar ul#sidebarNav li a.active {
+	color: #34beee;
+}
+
+/* Sidebar Content Settings */
+
+div#sidebarContent {
+	padding: 80px 0 40px 50px;
+	margin: 0;
+}
+
+div#sidebarContent h4 {
+	font-size: 20px;
+	color: #acacac;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+div#sidebarContent p em {
+	color: #888888;
+}
+
+div#sidebarContent div.sidebarPanel {
+	padding-bottom: 20px;
+	clear: both;
+	margin-bottom: 20px;
+}
+
+div#sidebarContent div#profile ul { }
+div#sidebarContent div#profile ul li { }
+
+div#sidebarContent div#skills ul {
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+}
+
+div#sidebarContent div#skills ul li {
+	line-height: 26px;
+	border-bottom: 1px solid #dadada;
+	width: 140px;
+	padding: 0 4px;
+}
+
+div#sidebarContent div#skills ul li:hover {
+	background-color: #f4f4f4;
+}
+
+/*education*/
+
+div#sidebarContent div#education p strong {
+	color: #f54cab;
+	font-weight: 200;
+	font-style: italic;
+	padding-right: 5px;
+}
+
+div#sidebarContent div#education em {
+	margin-left: 42px;
+}
+
+/*partage*/
+
+div#sidebarContent div#partage ul {
+	overflow: hidden;
+}
+
+div#sidebarContent div#partage h4 {
+	float: left;
+	line-height: 42px;
+}
+
+div#sidebarContent div#partage span {
+	display: none;
+}
+
+div#sidebarContent div#partage a.ico {
+	display: block;
+	float: right;
+	width: 22px;
+	height: 22px;
+	padding: 5px;
+	margin: 0 10px 10px 0;
+}
+
+div#sidebarContent div#partage .tumblr a.ico {
+	background: url(images/tumblr.gif) no-repeat left top;
+}
+
+div#sidebarContent div#partage .tumblr a.ico:hover,
+div#sidebarContent div#partage li.tumblr:hover a.ico {
+	background: url(images/tumblr.gif) no-repeat left -32px;
+} 
+
+div#sidebarContent div#partage .delicious a.ico {
+	background: url(images/delicious.gif) no-repeat left top;
+}
+
+div#sidebarContent div#partage .delicious a.ico:hover,
+div#sidebarContent div#partage li.delicious:hover a.ico {
+	background: url(images/delicious.gif) no-repeat left -32px;
+} 
+
+div#sidebarContent div#partage .facebook a.ico {
+	background: url(images/facebook.gif) no-repeat left top;
+}
+
+div#sidebarContent div#partage .facebook a.ico:hover,
+div#sidebarContent div#partage li.facebook:hover a.ico {
+	background: url(images/facebook.gif) no-repeat left -32px;
+}
+
+
+/* @end */
+
+/* @group FUCK IE */
+
+/* ie-not-supported */
+p.ie-not-supported {
+	background-color: #242424;
+	padding: 20px;
+	font-size: 25px;
+	line-height: 35px;
+	border-bottom: 1px solid #9b9b9b;
+	color: #34beee;
+}
+
+/* @end */
