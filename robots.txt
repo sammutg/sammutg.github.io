@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /ressources/
+Disallow: /test/

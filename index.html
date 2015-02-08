@@ -1,423 +1,349 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
-	<title>Guillaume Sammut</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" type="text/css" href="css/jcarousel.css" />
-	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
-	
-	<link href='http://fonts.googleapis.com/css?family=Raleway:400,900,800,300' rel='stylesheet' type='text/css'>
-	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-	<script src="js/jquery.sticky.js"></script>
-	<script src="js/jquery.isotope.min.js" type="text/javascript"></script>
-	<script type="text/javascript" src="js/sorting.js"></script>
-	<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
-	<script type="text/javascript" src="js/js.js"></script>
-	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
-	<script type="text/javascript" src="js/waypoints.min.js"></script>
-	
-	<!--[if lt IE 9]>
-		<script src="js/html5shiv.js"></script>
-		<script src="js/respond.src.js"></script>
-	<![endif]-->
-	
-	<script type="text/javascript">
-		$(document).ready(function(){	
-			$("#ajax-contact-form").submit(function() {
-				var str = $(this).serialize();		
-				$.ajax({
-					type: "POST",
-					url: "contact_form/contact_process.php",
-					data: str,
-					success: function(msg) {
-						// Message Sent - Show the 'Thank You' message and hide the form
-						if(msg == 'OK') {
-							result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
-							$("#fields").hide();
-						} else {
-							result = msg;
-						}
-						$('#note').html(result);
-					}
-				});
-				return false;
-			});
+ <meta charset="utf-8" />
+ <title>Pourquoi faire simple ?</title>
+ <meta name="description" content="Guillaume Sammut, Webdesigner indépendant. Création et conception de sites web simples. La simplicité une bonne stratégie !" />
+ <meta name="keywords" lang="fr" content="limoges, Haute-vienne, limousin, webdesigner, intégrateur, conception, site, web, xhtml, css, simple, simplicité, simplification" />
+ <meta name="author" lang="fr" content= "Guillaume Sammut" />
+ <link rel="author" href="https://plus.google.com/+GuillaumeSAMMUT/about">
+ <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+ <meta name="identifier-url" content= "www.pkoi-faire-simple.fr"  />
+ <meta name="reply-to" content= "sammutg+contact@gmail.com" />
+ <meta name="revisit-after" content= "10 days" />
+ <meta name="robots" content= "index, follow" />
 
-		});		
-	</script>
-	
+ <!-- Styles -->
+ <link href="resources/css/reset.css" rel="stylesheet" />    
+ <link href="resources/css/960_24.css" rel="stylesheet" />
+ <link href="resources/css/styles.css" rel="stylesheet" />
+ <link href="resources/css/print.css" rel="stylesheet" media="print" />
+
+ <!-- Script --> 
+ <script src="resources/js/jquery.js"></script>
+ <script src="resources/js/smooth-scroll.js"></script>
+ <script src="resources/js/custom.js"></script>
+
+ <!-- IE 7 setting -->
+ <!--[if lte IE 7]>
+ <link rel="stylesheet" type="text/css" href="resources/css/ie.css" media="all" />
+ <script type="text/javascript" src="resources/js/ie.js"></script>
+ <![endif]-->
+
+ <!-- authentification setting -->
+ <meta name="google-site-verification" content="HFwcnX-I-NNC7LDrIci9PQSjG78tf6lTUzXqL3XDp6A" />
+ <meta name="msvalidate.01" content="BAA2E815BA720F84AE0096D23EF268BC" />
+ <meta name="y_key" content="2ddb5d49f1307f56" />
 </head>
-
 <body>
+ 
+<!-- wrap -->
+<div id="wrap">
 
-
-<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
-	<div class="effect_2">
-		<div class="container clearfix">
-
-			<div id="content" class="grid_12">
-				<div class="filtr_bg">
-					<div class="slogan">
-						<div class="left_bord"></div>
-						<div class="slogan_text">Guillaume SAMMUT</div>
-						<div class="right_bord"></div>
-					</div>
-					<h1>pkoi-faire-simple</h1>
-					<span>Designer Web</span>
-					<a class="button" title="" data-slide="2"></a>
-				</div>
-				<div class="clear"></div>
-			</div>
-		</div>
-		<div class="inset_shadow"></div>
-	</div>
+<!--[if lte IE 6]>
+<div>
+ <p class="ie-not-supported">
+ Ce site est mal supporté par votre navigateur. Je vous invite à le mettre à jour ou à en essayer un autre !
+ </p>
 </div>
+<![endif]-->
+
+<!-- Wrap Header -->
+<div id="wrapHeader">
+<div id="header">
+<div class="container_24">
+<div id="topBar">
+ <div class="grid_13" id="years">
+  <ul id="yearsNav">
+   <li class="yearsLi firstYear" ><a href="#wrap" class="active">2011</a></li>
+   <li class="yearsLi"><a href="#y2010">2010</a></li>
+   <li class="yearsLi"><a href="#y2009">2009</a></li>
+   <li class="yearsLi">...</li>
+   <li class="yearsLi"><a href="#y2003">2003</a></li>
+   <li class="yearsLi lastYear"><a href="#y2002">2002</a></li>
+  </ul>
+ </div><!-- years nav -->
+ <div class="grid_11" id="topBarRight">
+  <h2>La simplicité <em>une bonne stratégie !</em></h2>
+ </div>
+</div><!-- topBar-->
+
+<div id="information">
+ <div class="grid_13" id="info">
+  <h2>sammutg@gmail.com<br /><em>06 60 52 94 88</em></h2>
+ </div>
+ <div class="grid_11" id="name"><h1><a href="#wrap">Sammut<br /><em>Guillaume</em></a></h1></div>
+</div><!-- information -->
+</div><!-- container -->
+</div><!-- header -->
+</div><!-- Wrap Header -->
+
+<!-- Wrap Content --> 
+<div id="wrapContent" class="container_24">
+ <div id="content" class="grid_13">
+
+ <!-- / 2010 / -->
+ <div class="yearPanel" id="y2010">
+  <div class="resumeEntry">
+  <div class="when grid_3">
+   <p>2011<br/><em>Mars à aujourd'hui</em></p>
+  </div>
+  <div class="description grid_9">
+   <h3>Proximit</h3>
+   <h5><a href="http://www.pkoi-faire-simple.fr/" title="Proximit">www.proximit.fr</a></h5>
+   <p>Développement PHP/MySql avec le framework Symfony et intégration avancée sur Drupal et Wordpress.</p>
+   <p class="ref">
+    Clients :
+      <a href="http://www.communaute-saint-yrieix.fr/" title="Communauté de Communes de St-Yrieix">Communauté de Communes de St-Yrieix</a>,<br />
+      <a href="http://www.legrand.fr/formation/formation-electriciens-legrand-materiel-et-equipement-electrique-professionnel_3452.html" title="Legrand : Espace Formation & Relations Enseignement">Legrand</a>, 
+      <a href="http://www.fabregue.fr/" title="Fabrègue">Fabrègue</a>, 
+      <a href="http://www.restosducoeur.org/" title="Restos du Coeur">Les Restos du coeur</a>,
+      <a href="http://www.cc-vienneglane.fr/" title="Communes de la Communauté de Communes VIENNE GLANE en Haute Vienne">Communauté de Communes Vienne Glane</a>
+   </p>
+  </div>
+  </div><!-- ResumeEntry -->
+ </div><!-- 2010 -->
 
 
-<div class="menu">	
-	<div class="container clearfix">
-		
-		<div id="nav">
-			<a class="btn_dropdown" data-toggle="collapse" data-target=".nav-collapse_">MENU</a>
-			<ul class="navigation">
-				<li data-slide="2">Pkoi ?</li>
-				<li data-slide="4">Compétences</li>
-				<li data-slide="8">Portfolio</li>
-				<li data-slide="10">Contact</li>
-				<div class="clear"></div>
-			</ul>
-		</div>
-	
-	</div>
-</div>
+ <!-- / 2010 / -->
+ <div class="yearPanel" id="y2010">
+  <div class="resumeEntry">
+  <div class="when grid_3">
+   <p>2010<br/><em>1 an et 2 mois</em></p>
+  </div>
+  <div class="description grid_9">
+   <h3>Pkoi faire simple ?</h3>
+   <h5><a href="http://www.pkoi-faire-simple.fr/" title="Pourquoi faire simple ? Guillaume Sammut Webdesigner">www.pkoi-faire-simple.fr</a></h5>
+   <p>
+   Webdesigner indépendant accompagné par la société de portage salarial <a href="http://www.dtalents.fr/" title="Dtalents">Dtalents</a>.
+   </p>
+   <p class="ref">
+    Clients : 
+    <a href="http://proximit.fr/" title="ProximIT, Les technologies de l'information">ProximIT</a>,
+    Centre Formation Limousin, 
+    <br /><a href="http://www.lettre-magique-du-pere-noel.com/" title="Lettre magique du Pere Noel">Lettre Magique du Père-Noel</a>, 
+    <a href="http://www.terrabois.fr/" title="Terra Bois - Maisons ossature bois">Terrabois</a>
+   </p>
+  </div>
+  </div><!-- ResumeEntry -->
+ </div><!-- 2010 -->
 
+ <!-- / 2009 / -->
+ <div class="yearPanel" id="y2009"> 
+  <div class="resumeEntry">
+  <div class="when grid_3">
+   <p>2009<br/><em>11 mois</em></p>
+  </div>
+  <div class="description grid_9">
+   <h3>Studio Althéa</h3>
+   <h5><a href="http://www.althea-groupe.com/-Webdesign-Communication-" title="Webdesign &amp; Communication">www.althea-groupe.com</a></h5>
+   <p>
+     Webdesigner et consultant référent sur plusieurs CMS&nbsp;: Spip, Joomla, Drupal, ModX et Wordpress.
+   </p>
+   <p>
+   Participation active au lancement de cette structure, améliorations des propositions commerciales et des études fonctionnelles.
+   </p>
+   <p class="ref">
+   Clients : 
+   <a href="http://www.althea-groupe.com/" title="Althéa - Cabinet de conseil et d'expertise RH &amp; SIRH">Althea-groupe</a>,
+   <a href="http://www.coaching-formation-communication.com/" title="Carly Abramowitz Consulting : Coaching, Formation, Communication">Carly Abramowitz</a>, 
+   <a href="http://www.depute-francoishollande.fr/" title="François Hollande">Francois Hollande</a>, 
+   Canal +, 
+   <a href="http://www.nutrixo.com/" title="NutriXo : Des Hommes au service du goût !">Nutrixo</a>, 
+   <a href="http://www.rdthv.com/" title="Régie Départementale des Transports de la Haute-Vienne - Réseau Haute-Vienne en car">Rdthv</a>…
+   </p>
+  </div>
+  </div><!-- ResumeEntry -->
+ </div><!-- 2009 -->
 
-<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
-	<div class="container clearfix">
-		
-		<div id="content" class="grid_12">
-			<h2>Pkoi ?</h2>
-		</div>
-		<div class="clear"></div>
-		
-<!-- 		<div id="content">
-			<div class="grid_8">
-				<h4>Some Things About Me</h4>
-				<p>Morbi rutrum, elit ac fermentum egestas, tortor ante vestibulum est, eget scelerisque nisl velit eget tellus. Fusce porta facilisis luctus. Integer neque dolor, rhoncus nec euismod eget, pharetra et tortor. Nulla id pulvinar nunc. Vestibulum auctor nisl vel lectus ullamcorper sed pellentesque dolor eleifend. Praesent lobortis magna vel diam mattis sagittis. Mauris porta odio eu risus scelerisque id facilisis ipsum dictum.</p>
-				<p>Vitae volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar neque eu purus sollicitudin et sollicitudin dui ultricies. Maecenas cursus auctor tellus sit amet blandit. Maecenas a erat ac nibh molestie interdum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed lorem enim, ultricies sed sodales id, convallis molestie ipsum. Morbi eget dolor ligula. Vivamus accumsan rutrum nisi nec elementum. Pellentesque at nunc risus. Phasellus ullamcorper bibendum varius.</p>
-			</div>
-			<div class="grid_4 omega">
-				<h4>Testimonials</h4>
-				<div class="testim_in">
-					<div class="testim_block">
-						Morbi rutrum, elit ac fermentum egestas, tortor ante vestibulum est, eget scelerisque nisl velit eget tellus. Fusce porta facilisis
-						<span></span>
-					</div>
-					<div class="author">Jack Welch</div>
-					<div class="clear"></div>
-				</div>
-				<div class="testim_in">
-					<div class="testim_block">
-						Mauris accumsan ante vitae tortor varius id fringilla ipsum ullamcorper. Sed quis est odio.
-						<span></span>
-					</div>
-					<div class="author">Alison McBrian</div>
-					<div class="clear"></div>
-				</div>
-			</div>
-			<div class="clear"></div>
-			
-			<div class="about_bord"></div>
-			
-			<div class="grid_12">
-				<h4>What I Do</h4>
-				<div id="jcarousel">
-					<ul id="mycarousel" class="jcarousel-skin-tango">
-						<li>
-							<img src="images/icon1.png" />
-							<p>Web Design</p>
-							<div class="clear"></div>
-							Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus tempor ipsum vel sapien mattis consequat. Etiam pharetra vestibulum urna sed
-						</li>
-						<li>
-							<img src="images/icon2.png" />
-							<p>Branding</p>
-							<div class="clear"></div>
-							Duis porttitor neque quis lectus gravida ut scelerisque lacus adipiscing. In malesuada pretium ante mattis consectetur. Phasellus adipiscing augue nec ipsum interdum molestie
-						</li>
-						<li>
-							<img src="images/icon3.png" />
-							<p>Graphic design</p>
-							<div class="clear"></div>
-							Proin elementum, lacus vitae consectetur pellentesque, dolor nisi euismod velit, ac placerat metus arcu sit amet lectus. Curabitur eu fermentum lorem. Nulla adipiscing pulvinar risus, nec
-						</li>
-						<li>
-							<img src="images/icon4.png" />
-							<p>Web Development</p>
-							<div class="clear"></div>
-							Aliquam erat volutpat. Donec interdum blandit metus, et tincidunt augue ultrices sit amet. Quisque pulvinar libero dictum erat aliquet venenatis. Sed vel eleifend mauris.
-						</li>
-						<div class="clear"></div>
-					</ul>
-				</div>
-			</div>
-			<div class="clear"></div>
-			
-		</div> -->
-		
-	</div>
-</div>
+ <!-- / 2008 / -->
+ <div class="yearPanel" id="y2003">
+  <div class="resumeEntry">
+  <div class="when grid_3">
+   <p>2003<br/><em>5 ans et 10 mois</em></p>
+  </div>
+  <div class="description grid_9">
+   <h3>Le Studio Vert</h3>
+   <h5><a href="http://www.lestudiovert.fr/" title="Le studio vert">www.lestudiovert.fr</a></h5>
+   <p>
+   <span>Intégrateur / Webdesigner</span><br />
+   Intégration Xhtml/Css seul ou en équipe.<br />
+   Maintenance de sites web.<br />
+   Charte graphique, interfaces ﬁlaires, habillage d’écrans, pictogrammes, newsletter.<br />
+   Réalisations de médias enrichis : animations flash, bannières gif…<br />
+   </p>
+   <p>
+   <span>Responsable de service</span><br />
+   Animation du service.<br />
+   Mesure des délais et respect des échéances.<br />
+   Bilan régulier sur l'avancement des projets.<br />
+   </p>
+   <p class="ref">
+   Clients :
+   <a href="http://www.adagesa.com" title="Adage">Adage</a>, 
+   <a href="http://www.chantec.fr" title="CHANTEC réinvente le Juke-Box">Chantec</a>, 
+   <a href="http://www.cmctp.fr" title="CMCTP - Entreprise de travaux publics dans le Limousin">Cmctp</a>, 
+   <a href="http://www.efcom.fr" title="Efcom">Efcom</a>, 
+   <a href="http://www.immonot.com" title="L'immobilier des notaires">Immonot</a>, 
+   <a href="http://www.frbc.net/" title="French Racing and Breeding Committee">Frbc</a>, 
+   <a href="http://www.notariat2000.com" title="Notariat 2000">Notariat 2000</a>, 
+   <a href="http://www.plastinov.fr" title="PLAST'INOV - Création et fabrication de PLV, présentoirs">Plast'inov</a>, 
+   <a href="http://www.ponthiersa.com" title="Fruits surgelés IQF et purées de fruits Ponthier">Ponthier</a>, 
+   <a href="http://www.qualilab.com" title="Qualilab">Qualilab</a>, 
+   <a href="http://www.sicame.com/" title="Groupe sicame">Groupe Sicame</a>
+   <a href="http://www.carrefourdesetudiants.unilim.fr/" title="Carrefour des étudiants">Université de Limoges</a>, 
+   <a href="http://www.webdesign-festival.com/2008/" title="WIF - Webdesign International Festival">Wif</a>…
+   </p>
+  </div>
+  </div><!-- ResumeEntry -->
+ </div><!-- 2008 -->
 
+ <!-- / 2002 / -->
+ <div class="yearPanel" id="y2002">
+ <div class="resumeEntry">
+ <div class="when grid_3">
+  <p>2002<br/><em>5 semaines</em></p>
+ </div>
+ <div class="description grid_9">
+  <h3>Option Com</h3>
+  <h5>www.optioncom.com</h5>
+  <p> 
+  Stage en agence spécialisée dans la communication et l'événementiel. 
+  Travail sur la réponse à l’appel d’offre pour le Marathon de l'Internet Créatif 2002.
+  </p>
+  <p class="ref">
+  Client : <a href="http://www.limousin-expansion.fr/" title="Limousin Expansion">Limousin Expansion</a>
+  </p>
+ </div>
 
+ <!-- Beurk !! -->
+ <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</div><!-- ResumeEntry -->
+</div><!-- 2002 -->
+</div><!-- content -->
 
+<div id="sidebar" class="grid_11">
+ <ul id="sidebarNav">
+  <li class="sidebarLi"><a href="#wrap" class="active">Pkoi ?</a></li>
+  <li class="sidebarLi"><a href="#skills">Compétences</a></li>
+  <li class="sidebarLi"><a href="#education">Formation</a></li>
+  <li class="sidebarLi"><a href="#partage" title="Pour partager encore plus">+</a></li>
+ </ul>
 
+<div id="sidebarContent" class="grid_9">
+<div id="profile" class="sidebarPanel">
+ <h4>Simplifier n’est pas simple !</h4>
+ <p>
+ Simplifier un design, par exemple, consiste à réduire le nombre d’éléments, mais cela nécessite aussi de les organiser de manière logique. Simplifier requiert de la pratique et de la réflexion.
+ </p>
+ <p>
+ <strong>Voici les raisons qui stimulent ma démarche permanente de simplification :</strong>
+ </p>
+ <ul>
+  <li>Il y'a toujours une alternative plus simple,</li>
+  <li>Nous avons tous besoin de choses simples,</li>
+  <li>Le fameux éloge du moins "Less is more",</li>
+  <li>La simplification améliore la clarté d’un message,</li>
+  <li>La simplification professionnalise le message,</li>
+  <li>La simplification fait gagner du temps,</li>
+  <li>La simplicité est une forme d’esthétisme,</li>
+  <li>La simplicité laisse une marge d’interprétation…</li>
+ </ul>
+</div><!-- profile -->
 
+<div id="skills" class="sidebarPanel">
+ <div class="grid_4 alpha">
+ <h4>Logiciels</h4>
+ <ul>
+  <li class="excelent">Fireworks</li>
+  <li class="good">Photoshop</li>
+  <li class="good">Illustrator</li>
+  <li class="medium">Flash</li>
+  <li class="good">TextMate</li>
+  <li class="excelent">Css Edit</li>
+  <li class="novice">Indesign</li>
+ </ul>
+ </div>
+ <div class="grid_4 omega">
+ <h4>Cms</h4>
+ <ul>
+  <li class="excelent">Spip</li>
+  <li class="good">Wordpress</li>
+  <li class="medium">Drupal</li>
+  <li class="good">Joomla</li>
+<!--   <li class="novice">ModX</li>
+  <li class="medium">TextPattern</li>
+  <li class="medium">GetSimple</li> -->
+ </ul>
+ </div>
+ <div class="clear">&nbsp;</div>
+ <div class="grid_4 alpha">
+ <h4>Langages</h4>
+ <ul>
+  <li class="excelent">Xhtml/Css</li>
+  <li class="excelent">Html5/Css3</li> 
+  <li class="medium">jQuery</li>
+  <li class="novice">Php/MySql</li>
+ </ul>
+ </div>
+ <div class="grid_4 omega">
+ <h4>Sensibilité</h4>
+ <ul>
+  <li class="good">Standards Web</li>
+  <li class="good">Accessibilité</li>
+  <li class="good">Ergonomie</li>
+  <li class="medium">Référencement</li>
+ </ul>
+ </div>
+<div class="clear">&nbsp;</div>
+</div><!-- skills -->
 
+<div id="education" class="sidebarPanel">
+ <h4>Formation</h4>
+ <p>
+ <strong>2002</strong> Maîtrise Chef de projet spécialiste T.I.C.<br />
+ <em>Université de Limoges</em><br />
+ </p>
+ <p>
+ <strong>1999</strong> D.U.T. Techniques de commercialisation<br />
+ <em>I.U.T. de Limoges</em>
+ </p>
+ <p>
+ <strong>1997</strong> BAC Sciences Economiques et sociales<br />
+ <em>Lycée Gay Lussac à Limoges</em>
+ </p>
+</div><!-- education -->
 
+<div id="partage" class="sidebarPanel">
+ <h4>Retrouvez-moi aussi sur</h4>
+ <ul>
+  <li class="delicious">
+  <a href="http://delicious.com/sammutg" title="Consultez mes favoris sur Delicious" class="ico"><span>Delicious</span></a> 
+  </li>
+  <li class="facebook"> 
+  <a href="http://www.facebook.com/guillaume.sammut" title="Rendez-vous directement sur mon profil facebook" class="ico"><span>Facebook</span></a>
+  </li>
+  <li class="tumblr">
+  <a href="http://sammutg.tumblr.com/" title="Suivez mes notes, mes images… et tout ce que j'aime du net sur Tumblr" class="ico"><span>Tumblr</span></a> 
+  </li>
+ </ul>
+</div><!-- education -->
+</div><!-- the sidebarContent -->
+</div><!-- sidebar -->
+</div><!-- wrapContent -->
+</div><!-- wrap -->
+<!-- Je code mes sites dans le respect des standards web -->
 
-
-<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
-	<div class="container clearfix">
-		
-		<div id="content" class="grid_12">
-			<h2>Compétences</h2>
-		</div>
-		<div class="clear"></div>
-		
-<!-- 		<div id="content">
-			<div class="grid_7">
-				<h4>Education</h4>
-				<div class="educ_block">
-					<p class="fleft">Graphic Design</p>
-					<p class="fright">2020 - 2027</p>
-					<div class="clear"></div>
-					Donec in vehicula augue. Sed et nisi sem, at semper dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut urna nibh, a semper neque. Mauris ultrices tempus nisi, et porttitor nulla varius a.
-				</div>
-				<div class="educ_block">
-					<p class="fleft">Web Design</p>
-					<p class="fright">2027</p>
-					<div class="clear"></div>
-					Cras et enim augue. Suspendisse diam enim, tincidunt eu accumsan eget, aliquam id enim. Mauris eget semper odio. Sed aliquet viverra sollicitudin. Curabitur pulvinar, risus in pulvinar pulvinar, tortor lorem posuere justo, a ullamcorper ligula ligula vitae tellus.
-				</div>
-			</div>
-			<div class="grid_5 omega">
-				<h4>Skills</h4>
-				<ul id="skills_block">
-					<p>Flash <b>60%</b></p>
-					<div class="progress progress-striped active">
-						<div class="bar" style="width: 60%"></div>
-					</div>
-					<p>Photoshop <b>80%</b></p>
-					<div class="progress progress-striped active">
-						<div class="bar" style="width: 80%"></div>
-					</div>
-					<p>Coreldraw <b>45%</b></p>
-					<div class="progress progress-striped active">
-						<div class="bar" style="width: 45%"></div>
-					</div>
-					<p>Illustrator <b>65%</b></p>
-					<div class="progress progress-striped active">
-						<div class="bar" style="width: 65%"></div>
-					</div>
-				</ul>
-			</div>
-			<div class="clear"></div>
-		</div> -->
-	
-	</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="slide" id="slide8" data-slide="8" data-stellar-background-ratio="0.5">
-	<div class="container clearfix">
-		
-		<div id="content" class="grid_12">
-			<h2>Portfolio</h2>
-		</div>
-		<div class="clear"></div>
-		
-<!-- 		<div id="contenet">
-			<div id="options">
-				<ul id="filters" class="option-set" data-option-key="filter">
-					<li><a href="index.html#filter" data-option-value="*" class="btn dark_btn selected"><span></span>All</a></li>
-					<li><a href="index.html#filter" data-option-value=".category01"><span></span>Web design</a></li>
-					<li><a href="index.html#filter" data-option-value=".category02"><span></span>Graphic design</a></li>
-					<li><a href="index.html#filter" data-option-value=".category03"><span></span>Motion design</a></li>
-				</ul>
-				<div class="clear"></div>
-			</div>
-			<div class="gallery-list">
-				<div class="projects">
-					<div class="img_block element category01" data-category="category01">
-						<div class="hover_img">
-							<img class="portf_img" src="images/portfolio/1.jpg" alt="" />
-							<div class="item_description">
-								<p>nikki johnson</p>
-								Nam eleifend vulputate diam
-							</div>
-							<span class="portfolio_zoom"><a href="images/portfolio/full/1.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-							<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
-						</div>
-					</div>
-					<div class="img_block element category02" data-category="category02">
-						<div class="hover_img">
-							<img class="portf_img" src="images/portfolio/2.jpg" alt="" />
-							<div class="item_description">
-								<p>nikki johnson</p>
-								Nam eleifend vulputate diam
-							</div>
-							<span class="portfolio_zoom"><a href="images/portfolio/full/2.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-							<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
-						</div>
-					</div>
-					<div class="img_block element category03" data-category="category03">
-						<div class="hover_img">
-							<img class="portf_img" src="images/portfolio/3.jpg" alt="" />
-							<div class="item_description">
-								<p>nikki johnson</p>
-								Nam eleifend vulputate diam
-							</div>
-							<span class="portfolio_zoom"><a href="images/portfolio/full/3.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-							<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
-						</div>
-					</div>
-					<div class="img_block element category02" data-category="category02">
-						<div class="hover_img">
-							<img class="portf_img" src="images/portfolio/4.jpg" alt="" />
-							<div class="item_description">
-								<p>nikki johnson</p>
-								Nam eleifend vulputate diam
-							</div>
-							<span class="portfolio_zoom"><a href="images/portfolio/full/4.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-							<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
-						</div>
-					</div>
-					<div class="img_block element category01" data-category="category01">
-						<div class="hover_img">
-							<img class="portf_img" src="images/portfolio/5.jpg" alt="" />
-							<div class="item_description">
-								<p>nikki johnson</p>
-								Nam eleifend vulputate diam
-							</div>
-							<span class="portfolio_zoom"><a href="images/portfolio/full/5.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-							<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
-						</div>
-					</div>
-					<div class="img_block element category02" data-category="category02">
-						<div class="hover_img">
-							<img class="portf_img" src="images/portfolio/6.jpg" alt="" />
-							<div class="item_description">
-								<p>nikki johnson</p>
-								Nam eleifend vulputate diam
-							</div>
-							<span class="portfolio_zoom"><a href="images/portfolio/full/6.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-							<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
-						</div>
-					</div>
-					<div class="img_block element category03" data-category="category03">
-						<div class="hover_img">
-							<img class="portf_img" src="images/portfolio/7.jpg" alt="" />
-							<div class="item_description">
-								<p>nikki johnson</p>
-								Nam eleifend vulputate diam
-							</div>
-							<span class="portfolio_zoom"><a href="images/portfolio/full/7.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-							<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
-						</div>
-					</div>
-					<div class="img_block element category02" data-category="category02">
-						<div class="hover_img">
-							<img class="portf_img" src="images/portfolio/8.jpg" alt="" />
-							<div class="item_description">
-								<p>nikki johnson</p>
-								Nam eleifend vulputate diam
-							</div>
-							<span class="portfolio_zoom"><a href="images/portfolio/full/8.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-							<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
-						</div>
-					</div>
-					
-					<div class="clear"></div>
-				</div>   
-			</div>
-		</div> -->
-	
-	</div>
-</div>
-
-
-
-
-
-
-
-<div class="slide" id="slide10" data-slide="10" data-stellar-background-ratio="0.5">
-	<div class="container clearfix">
-		
-		<div id="content" class="grid_12">
-			<h2>Contact</h2>
-		</div>
-		<div class="clear"></div>
-		
-<!-- 		<div class="grid_12">
-			<p>Nullam aliquam, mauris sit amet convallis condimentum, massa tortor pretium magna, vitae rutrum libero nibh vitae nisl. Sed imperdiet dictum sapien. Mauris tortor massa, euismod eu rhoncus dignissim, ultrices at leo. Donec gravida, lorem ac sollicitudin venenatis, ante risus convallis massa, non porta eros diam sit amet elit. Ut blandit ornare ante hendrerit malesuada. Duis eget odio at erat condimentum tempus. Duis fermentum odio nec arcu elementum sit amet</p>
-			<div class="contact_form">  
-				<div id="note"></div>
-				<div id="fields">
-					<form id="ajax-contact-form" action="">
-						<div class="grid_6">
-							<input type="text" name="name" value="" placeholder="Name" />
-							<input type="text" name="subject" value="" placeholder="Phone" />
-							<input type="text" name="email" value="" placeholder="Email" />
-						</div>
-						<div class="grid_6 omega"><textarea name="message" id="message" placeholder="Message"></textarea></div>
-						<div class="clear"></div>
-						<input type="reset" class="contact_btn" value="Clear Form" />
-						<input type="submit" class="contact_btn send_btn" value="Send" />
-						<div class="clear"></div>
-					</form>
-				</div>
-			</div>
-		</div> -->		
-		<div class="clear"></div>
-
-	</div>
-	
-	<!-- <div id="map_block"><iframe width="100%" height="722" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=los+angeles&aq=&sll=37.0625,-95.677068&sspn=53.080379,114.169922&ie=UTF8&hq=&hnear=Los+Angeles,+California&ll=34.052234,-118.243685&spn=0.003427,0.006968&t=m&z=14&output=embed"></iframe></div> -->
-	
-</div>
-
-
-
-
-<div id="footer">
-	<div class="container clearfix">
-		<div class="copyright">Guillaume Sammut &copy; 2014 <!-- | <a href="javascript:void(0);">Privacy Policy</a> --></div>
-		<div id="back_top"><a class="button" title="" data-slide="1"></a></div>
-	</div>
-</div>
-
+<script type="text/javascript">
+ var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+ try {
+  var pageTracker = _gat._getTracker("UA-12163734-2");
+  pageTracker._trackPageview();
+ } catch(err) {}</script>
 
 </body>
 </html>
-
-
-
-
-
-
